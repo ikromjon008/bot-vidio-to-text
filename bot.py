@@ -36,7 +36,7 @@ def echo_message(message):
         tarjima = tr(source='auto', target='uz', ).translate(text)
          with open('tarjima.txt', 'w+') as file:
             file.write(text + '\n\n' + tarjima)
-            file = open("tarjima.txt", "rb") as file:
+            file = open("tarjima.txt", "rb")
             bot.send_document(message.chat.id, file)
 
 
