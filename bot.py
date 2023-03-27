@@ -34,8 +34,8 @@ def echo_message(message):
             audio = r.record(source)
         text = r.recognize_google(audio, language='en-US')
         tarjima = tr(source='auto', target='uz', ).translate(text)
-        with open("tarjima.txt", "rb") as file:
-            bot.send_document(message.chat.id, file)
+         with open('tarjima.txt', 'w', encoding='utf-8') as file:
+            file.write(text + '\n\n' + tarjima)
 
 
     # Agar xabar ovozli fayl bo'lsa
