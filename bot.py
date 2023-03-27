@@ -1,6 +1,5 @@
 import os
 import telebot
-from pydub import AudioSegment
 from moviepy.editor import *
 import speech_recognition as sr
 from deep_translator import GoogleTranslator as tr
